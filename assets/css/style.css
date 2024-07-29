@@ -6,7 +6,7 @@ Version: 1.0
 coder name:Prabin Raja
 Description: This Template is created for Youtubers
 ======================================================================= */
-/* ===================================== Import Variables ================================== */
+/* ===================================== Import Less ================================== */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Arimo:300,400,400italic,700,700italic);
 /* ===================================== Basic CSS ==================================== */
@@ -80,13 +80,15 @@ p {
   padding: 0px; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
   color: #545454; }
+
+strong {
+  font-family: 'Roboto', sans-serif; }
 
 body {
   background-color: #f1f1f145 !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  font-family: 'Roboto', sans-serif;
   color: #6A6A6A;
   overflow-x: hidden; }
 
@@ -94,21 +96,17 @@ body {
   padding: 30px;
   margin: 0px;
   margin-bottom: 20px; }
-  @media screen and (max-width: 767px) {
-    .session-title {
-      padding: 5px; } }
   .session-title h2 {
     width: 100%;
     text-align: center;
-    font-weight: 600;
-    margin-bottom: 0px; }
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600; }
   .session-title p {
     max-width: 850px;
     text-align: center;
     float: none;
     margin: auto;
-    font-size: .9rem;
-    margin-top: 6px; }
+    text-transform: uppercase; }
   .session-title span {
     float: right;
     font-style: italic; }
@@ -142,28 +140,22 @@ body {
     font-size: .8rem; }
 
 .page-nav {
-  background-size: 100%;
-  padding: 68px;
+  padding: 40px;
   text-align: center;
+  padding-top: 40px;
   background-color: #eaeaea; }
   .page-nav ul {
     float: none;
     margin: auto; }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 576px) {
     .page-nav {
-      background-size: auto; } }
-  @media screen and (max-width: 767px) {
-    .page-nav {
-      padding-top: 200px;
-      padding-bottom: 40px; } }
+      padding-top: 43px; } }
   @media screen and (max-width: 356px) {
     .page-nav {
-      padding-top: 200px;
-      padding-bottom: 40px; } }
+      padding-top: 43px; } }
   .page-nav h2 {
-    font-size: 28px;
+    font-size: 36px;
     width: 100%;
-    font-weight: 700;
     color: #444; }
     @media screen and (max-width: 600px) {
       .page-nav h2 {
@@ -172,45 +164,40 @@ body {
     float: left;
     margin-right: 10px;
     margin-top: 10px;
-    font-size: 16px;
-    font-size: .93rem;
-    font-weight: 600;
-    color: #444; }
+    font-size: 16px; }
     .page-nav ul li i {
       width: 30px;
       text-align: center;
       color: #444; }
     .page-nav ul li a {
-      color: #444;
-      font-size: .93rem;
-      font-weight: 600; }
+      color: #444; }
 
 .btn-success {
-  background-color: #51be78;
-  border-color: #51be78; }
+  background-color: #223d50;
+  border-color: #223d50; }
   .btn-success:hover {
-    background-color: #51be78 !important;
-    border-color: #51be78 !important; }
+    background-color: #223d50 !important;
+    border-color: #223d50 !important; }
   .btn-success:active {
-    background-color: #51be78 !important;
-    border-color: #51be78 !important; }
+    background-color: #223d50 !important;
+    border-color: #223d50 !important; }
   .btn-success:focus {
-    background-color: #51be78 !important;
-    border-color: #51be78 !important;
+    background-color: #223d50 !important;
+    border-color: #223d50 !important;
     box-shadow: none !important; }
 
 .btn-primary {
-  background-color: #3cc88f;
-  border-color: #3cc88f; }
+  background-color: #6655e8;
+  border-color: #6655e8; }
   .btn-primary:hover {
-    background-color: #3cc88f !important;
-    border-color: #3cc88f !important; }
+    background-color: #6655e8 !important;
+    border-color: #6655e8 !important; }
   .btn-primary:active {
-    background-color: #3cc88f !important;
-    border-color: #3cc88f !important; }
+    background-color: #6655e8 !important;
+    border-color: #6655e8 !important; }
   .btn-primary:focus {
-    background-color: #3cc88f !important;
-    border-color: #3cc88f !important;
+    background-color: #6655e8 !important;
+    border-color: #6655e8 !important;
     box-shadow: none !important; }
 
 .btn {
@@ -219,7 +206,7 @@ body {
 
 .form-control:focus {
   box-shadow: none !important;
-  border: 1px solid #CCC; }
+  border: 2px solid  #863dd9; }
 
 .btn-light {
   background-color: #FFF;
@@ -230,7 +217,7 @@ body {
 
 .form-control:focus {
   box-shadow: none;
-  border: 1px solid #CCC; }
+  border: 2px solid #863dd9 !important; }
 
 .form-control {
   background-color: #F8F8F8;
@@ -246,115 +233,53 @@ body {
       padding: 10px 15px; } }
 
 /* =================== Header Style Starts Here =================== */
-header {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+header .header-top {
   background-color: #FFF;
-  width: 100%;
-  z-index: 99; }
-  header .logo {
-    padding-top: 6px; }
-  header .header-top {
-    background-color: #fff;
-    border-bottom: 1px solid #d3d7cea6;
-    padding: 7px; }
-    header .header-top .col-det .ulleft li {
-      float: left;
-      padding: 12px;
-      color: #686968;
-      font-size: .9rem; }
-      header .header-top .col-det .ulleft li i {
-        margin-right: 5px;
-        color: #bfbfbf; }
-      header .header-top .col-det .ulleft li span {
-        margin-left: 15px; }
-    header .header-top .col-det .ulright {
-      float: right; }
-      header .header-top .col-det .ulright li {
-        float: left;
-        padding: 10px;
-        color: #d3d7ce;
-        font-size: 1rem;
-        font-weight: 600; }
-        header .header-top .col-det .ulright li i {
-          margin-right: 5px;
-          color: #8c8a8a; }
-        header .header-top .col-det .ulright li small {
-          color: #8c8a8a;
-          font-weight: 600; }
-        header .header-top .col-det .ulright li span {
-          margin-left: 15px; }
-    header .header-top .btn-bhed {
-      padding-top: 7px;
-      text-align: right; }
-      header .header-top .btn-bhed .btn {
-        padding: 5px 23px;
-        border-radius: 50px;
-        margin-left: 5px; }
-  header .header-bottom {
-    padding: 6px;
-    background-color: #fff; }
-    @media screen and (max-width: 991px) {
-      header .header-bottom {
-        padding: 0px; } }
-    @media screen and (max-width: 991px) {
-      header .header-bottom img {
-        padding: 5px;
-        margin-top: 0px;
-        max-width: 230px; } }
-  header .nav-col .navbad {
-    display: block;
+  padding: 10px; }
+  header .header-top .bonto ul {
     float: right; }
-    @media screen and (max-width: 991px) {
-      header .nav-col .navbad {
-        width: 100%; } }
-    header .nav-col .navbad li {
-      padding: 15px 15px;
-      font-weight: 700;
-      font-size: .9rem;
-      float: left; }
-      @media screen and (max-width: 1005px) {
-        header .nav-col .navbad li {
-          padding: 15px 12px; } }
-      @media screen and (max-width: 991px) {
-        header .nav-col .navbad li {
-          float: none;
-          width: 100%;
-          padding: 10px; } }
-      header .nav-col .navbad li a {
-        color: #686968 !important;
-        border: 1px solid #CCC;
-        border-radius: 50px; }
-        header .nav-col .navbad li a:hover {
-          background-color: #3cc88f;
-          color: #fff !important; }
-    header .nav-col .navbad .nav-btn {
-      float: right; }
-  header .small-menu {
-    float: right;
-    color: #686968;
-    font-size: 1.8rem;
-    position: absolute;
-    right: 13px;
-    top: 19px; }
-
-@media screen and (max-width: 767px) {
-  .navbar {
-    padding: 0px; } }
-
-.navbar-toggler {
-  position: absolute;
-  right: 0px;
-  top: -40px; }
-  @media screen and (max-width: 767px) {
-    .navbar-toggler {
-      top: -50px; } }
+    header .header-top .bonto ul li {
+      float: left;
+      padding: 10px;
+      text-transform: uppercase; }
+      header .header-top .bonto ul li p {
+        font-size: .7rem;
+        font-weight: 600; }
+    header .header-top .bonto ul .donta-btn {
+      background-color: #28a745;
+      color: #FFF;
+      padding: 5px 15px;
+      border-radius: 5px; }
+    header .header-top .bonto ul .voltterr-btn {
+      background-color: #51be78;
+      color: #FFF;
+      padding: 5px 15px;
+      border-radius: 5px; }
+header .headwe-nav {
+  background-color: #fafafa; }
+  header .headwe-nav .nav-div .navbar {
+    padding: 0px; }
+  header .headwe-nav .nav-div .navbar-nav {
+    padding: 20px 0px; }
+    header .headwe-nav .nav-div .navbar-nav .nav-item .nav-link {
+      text-transform: uppercase;
+      font-size: .8rem;
+      font-weight: 600;
+      padding: 0px 25px;
+      color: #777474;
+      border-right: 1px solid #7774745c; }
+      header .headwe-nav .nav-div .navbar-nav .nav-item .nav-link:hover {
+        color: #51be78; }
+    header .headwe-nav .nav-div .navbar-nav .nav-item .active {
+      color: #51be78; }
+  header .headwe-nav .social-div ul {
+    float: right; }
+    header .headwe-nav .social-div ul li {
+      float: left;
+      padding: 18px 10px; }
 
 .scroll-to-fixed-fixed {
-  background-color: #FFF;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-
-.scroll-to-fixed-fixed {
-  padding: 5px !important; }
 
 /* =================== Slider Style Starts Here =================== */
 .slider {
@@ -395,9 +320,9 @@ header {
   color: #fff; }
 
 .slider-img {
-  background: -moz-linear-gradient(top, rgba(45, 32, 44, 0.3) 0%, rgba(45, 32, 44, 0.1) 100%);
-  background: -webkit-linear-gradient(top, rgba(45, 32, 44, 0.3) 0%, rgba(45, 32, 44, 0.1) 100%);
-  background: linear-gradient(to bottom, rgba(45, 32, 44, 0.3) 0%, rgba(45, 32, 44, 0.1) 100%);
+  background: -moz-linear-gradient(top, rgba(45, 32, 44, 0.3) 0%, rgba(45, 32, 44, 0.3) 100%);
+  background: -webkit-linear-gradient(top, rgba(45, 32, 44, 0.3) 0%, rgba(45, 32, 44, 0.3) 100%);
+  background: linear-gradient(to bottom, rgba(45, 32, 44, 0.3) 0%, rgba(45, 32, 44, 0.3) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc1b2429', endColorstr='#cc1b2429', GradientType=0);
   position: relative; }
 
@@ -405,8 +330,7 @@ header {
   position: relative;
   z-index: -1; }
 
-.slider .owl-nav .owl-prev,
-.slider .owl-nav .owl-next {
+.slider .owl-nav .owl-prev, .slider .owl-nav .owl-next {
   color: #fff;
   display: inline-block;
   zoom: 1;
@@ -461,8 +385,7 @@ header {
 .slider .owl-dots .owl-dot.active span {
   background-color: #fff; }
 
-.slider .owl-dots .owl-dot.active span,
-.slider .owl-controls.clickable .owl-page:hover span {
+.slider .owl-dots .owl-dot.active span, .slider .owl-controls.clickable .owl-page:hover span {
   background-color: #fff;
   filter: Alpha(Opacity=100);
   /*IE7 fix*/
@@ -472,208 +395,261 @@ header {
   float: none;
   margin: auto; }
 
-/* ===================================== About CSS ================================== */
+/* =================== Header Style Starts Here =================== */
 .about-us {
-  background-color: #edf1f5;
   padding: 50px; }
   @media screen and (max-width: 940px) {
     .about-us {
       padding: 30px 10px; } }
-  .about-us .natur-row {
+  .about-us .diag-ro {
+    margin: 0px;
     margin-top: 20px; }
-  .about-us .text-part h2 {
-    font-weight: 600;
-    font-size: 1.8rem;
+    .about-us .diag-ro h4 {
+      margin-bottom: 20px; }
+    .about-us .diag-ro .about-diag {
+      display: flex;
+      flex: 1;
+      padding: 10px;
+      margin: auto; }
+      .about-us .diag-ro .about-diag .icon {
+        margin: auto;
+        padding: 15px 20px; }
+        .about-us .diag-ro .about-diag .icon i {
+          font-size: 1.8rem;
+          color: #CCC; }
+      .about-us .diag-ro .about-diag .tex {
+        flex-grow: 1; }
+        .about-us .diag-ro .about-diag .tex h5 {
+          font-weight: 600;
+          color: #51be78; }
+        .about-us .diag-ro .about-diag .tex p {
+          text-transform: uppercase;
+          font-size: .8rem; }
+  .about-us .abut-detail h4 {
     margin-bottom: 20px; }
-  .about-us .text-part p {
+  .about-us .abut-detail p {
     text-indent: 20px;
-    margin-bottom: 15px;
-    line-height: 27px;
-    font-weight: 500;
-    text-align: justify;
-    font-size: .9rem; }
-  .about-us .image-part .about-quick-box .about-qcard {
-    padding: 50px 30px;
-    background-color: #FFF;
-    box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35);
-    border-radius: 15px;
-    text-align: center;
-    margin-bottom: 30px; }
-    .about-us .image-part .about-quick-box .about-qcard p {
-      font-weight: 600;
-      font-size: 1.2rem; }
-    .about-us .image-part .about-quick-box .about-qcard i {
-      font-size: 3rem;
-      margin-bottom: 30px;
-      color: #3cc88f; }
-    .about-us .image-part .about-quick-box .about-qcard .red {
-      color: #ff6b70; }
-    .about-us .image-part .about-quick-box .about-qcard .yell {
-      color: #f7a900; }
-    .about-us .image-part .about-quick-box .about-qcard .blu {
-      color: #21d7d9; }
+    line-height: 28px;
+    margin-bottom: 15px; }
 
-/* ===================================== Events Home CSS ================================== */
-.events {
-  background-color: #efefef2e;
-  padding: 50px; }
-
-@media screen and (max-width: 940px) {
-  .events {
-    padding: 30px 10px; } }
-.events .event-ro .event-box {
-  text-align: center;
-  margin-bottom: 20px; }
-
-.events .event-ro .event-box img {
-  margin-bottom: 20px; }
-
-.events .event-ro .event-box h4 {
-  font-size: 18px; }
-
-.events .event-ro .event-box .raises {
-  margin-bottom: 10px; }
-
-.events .event-ro .event-box .raises span {
-  color: #71b61b; }
-
-.events .event-ro .event-box .desic {
-  font-size: 13px;
-  margin-bottom: 15px; }
-
-/* ===================================== Mission Vision CSS ================================== */
-.mission-vision {
-  background-color: #FFF; }
-  .mission-vision .mission {
-    padding: 50px; }
-    @media screen and (max-width: 940px) {
-      .mission-vision .mission {
-        padding: 30px 10px; } }
-  .mission-vision .vision {
-    padding: 50px; }
-    @media screen and (max-width: 940px) {
-      .mission-vision .vision {
-        padding: 30px 10px; } }
-  .mission-vision .mv-det {
-    margin: auto; }
-
-/* ===================================== Charity Number CSS ================================== */
-.doctor-message {
-  background-image: url("../images/slider/slider-2.jpg");
-  background-attachment: fixed;
-  background-size: cover; }
-  .doctor-message .session-title h2 {
-    color: #FFF; }
-
-.doctor-message .inner-lay {
-  background-color: rgba(0, 0, 0, 0.8);
+/* =================== Header Style Starts Here =================== */
+.services {
   padding: 50px;
-  color: #FFF; }
+  background-color: #FFF; }
+  @media screen and (max-width: 940px) {
+    .services {
+      padding: 30px 10px; } }
+  .services .service-row .servic-col {
+    text-align: center; }
+    .services .service-row .servic-col .servic-round {
+      width: 90px;
+      height: 90px;
+      background-color: #51be78;
+      color: #FFF;
+      float: none;
+      margin: auto;
+      border-radius: 50px;
+      margin: auto;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      border: 4px solid #FFF;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+      .services .service-row .servic-col .servic-round p {
+        padding-top: 33px;
+        font-weight: 600;
+        font-size: .8rem; }
 
-@media screen and (max-width: 940px) {
-  .doctor-message .inner-lay {
-    padding: 30px 10px; } }
-.doctor-message .inner-lay .numb {
-  text-align: center;
-  padding: 30px; }
+/* =================== Causes Style Starts Here =================== */
+.causes {
+  padding: 50px; }
+  @media screen and (max-width: 940px) {
+    .causes {
+      padding: 30px 10px; } }
+  .causes .cuses-row .causen-ccover {
+    background-color: #FFF;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 30px 15px;
+    margin-bottom: 20px; }
+  .causes .cuses-row .caus-img {
+    text-align: center; }
+    .causes .cuses-row .caus-img img {
+      width: 120px;
+      border-radius: 50%;
+      border: 5px solid #28a745;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      margin-bottom: 20px; }
+  .causes .cuses-row .caus-info .left-info {
+    float: left;
+    font-weight: 600;
+    font-size: .8rem; }
+  .causes .cuses-row .caus-info .rit-info {
+    float: right;
+    font-weight: 600;
+    font-size: .8rem; }
+  .causes .cuses-row .caus-detail {
+    text-align: center;
+    margin-top: 20px; }
+    .causes .cuses-row .caus-detail h4 {
+      font-size: 1.2rem; }
+  .causes .cuses-row .donat-btn {
+    margin-top: 20px;
+    text-align: center;
+    text-align: center; }
+    .causes .cuses-row .donat-btn .btn {
+      width: 60%;
+      background-color: #51be78;
+      border: #51be78;
+      text-transform: uppercase;
+      font-weight: 600; }
+      .causes .cuses-row .donat-btn .btn i {
+        margin-right: 10px; }
 
-.doctor-message .inner-lay .numb h3 {
-  font-size: 42px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #CCC;
-  margin-bottom: 20px;
-  color: #FFF; }
-
-/* ===================================== Our Blog CSS ================================== */
-.our-blog {
-  background-color: #FDFDFD;
-  padding: 40px; }
-
-@media screen and (max-width: 967px) {
-  .our-blog {
-    padding: 30px 0px; } }
-.our-blog .single-blog {
-  margin-bottom: 20px;
+/* =================== Upcomming Style Starts Here =================== */
+.upcomming {
   background-color: #FFF;
-  box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54); }
+  padding: 50px; }
+  @media screen and (max-width: 940px) {
+    .upcomming {
+      padding: 30px 10px; } }
+  .upcomming .events-row .event-card {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    margin-bottom: 20px; }
+    .upcomming .events-row .event-card .event-detail {
+      padding: 20px;
+      text-align: center; }
+      .upcomming .events-row .event-card .event-detail h6 {
+        margin-top: 20px;
+        font-size: 1.2rem; }
+    .upcomming .events-row .event-card .plac-dat {
+      border-top: 1px solid #CCC; }
+      .upcomming .events-row .event-card .plac-dat .colplac {
+        font-size: .9rem;
+        padding: 10px; }
+        .upcomming .events-row .event-card .plac-dat .colplac p {
+          font-size: .8rem; }
+      .upcomming .events-row .event-card .plac-dat .colplacll {
+        border-right: 1px  solid #CCC; }
+    .upcomming .events-row .event-card:hover {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
-.our-blog .single-blog figure {
-  margin-bottom: 5px; }
+/* =================== We are Making Style Starts Here =================== */
+.we-are-making .text-part {
+  padding: 60px;
+  padding-left: 20px; }
+  .we-are-making .text-part h3 {
+    padding-top: 10px; }
+  .we-are-making .text-part .count {
+    margin-top: 30px; }
+    .we-are-making .text-part .count .count-sing {
+      text-align: center; }
+      .we-are-making .text-part .count .count-sing i {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #51be78; }
+      .we-are-making .text-part .count .count-sing h2 {
+        color: #28a745; }
 
-.our-blog .single-blog .blog-detail {
+/* =================== Blog Style Starts Here =================== */
+.blog {
+  padding: 50px;
+  background-color: #ffffff; }
+
+@media screen and (max-width: 990px) {
+  .blog {
+    padding: 0px 10px; } }
+@media screen and (max-width: 1199px) {
+  .blog .container {
+    max-width: 100%; } }
+.blog .blog-singe {
+  box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
+  border-radius: 2px;
+  background-color: #FFF;
+  margin-bottom: 30px; }
+
+.blog .blog-singe .blog-img-tab {
+  padding: 0px; }
+
+.blog .blog-singe .blog-content-tab {
   padding: 15px; }
 
-.our-blog .single-blog small {
-  color: #71b61b;
+.blog .blog-singe .blog-content-tab h2 {
+  font-size: 19px; }
+
+.blog .blog-singe .blog-content-tab i {
+  margin-right: 10px;
   font-size: 12px; }
 
-.our-blog .single-blog h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  margin-top: 10px; }
-
-.our-blog .single-blog p {
-  text-align: justify;
-  text-indent: 20px; }
-
-.our-blog .single-blog .link a {
-  font-size: 12px;
-  color: #71b61b; }
-
-.our-blog .single-blog .link i {
-  padding-top: 6px;
+.blog .blog-singe .blog-content-tab i small {
   margin-left: 5px;
-  color: #FFFFFF; }
+  font-size: 100%; }
 
-/* ===================================== Fooer CSS ================================== */
-.footer {
-  padding: 50px;
-  padding-bottom: 50px;
-  background-color: #1e2436;
-  color: #FFF; }
-
-@media screen and (max-width: 940px) {
-  .footer {
-    padding: 30px 10px; } }
-.footer h2 {
-  font-size: 26px;
-  margin-top: 10px;
-  color: #FFF;
-  font-size: 1.2rem;
-  margin-bottom: 15px; }
-
-.footer p {
-  text-align: justify;
+.blog .blog-singe .blog-content-tab .blog-desic {
+  margin-top: 8px;
+  font-size: 12px;
   text-indent: 20px;
-  font-size: .9rem; }
+  margin-bottom: 10px; }
 
-.footer .link-list li {
-  padding: 10px;
-  border-bottom: 1px solid #6C6C6C;
-  font-size: .9rem; }
+.blog .blog-singe .blog-content-tab a {
+  color: #28a745;
+  font-size: 12px; }
 
-.footer .link-list li a {
-  color: #FFF; }
+.blog .blog-singe .blog-content-tab a i {
+  margin-left: 15px;
+  font-size: 13px; }
 
-.footer .link-list li i {
-  float: right; }
+.blog-row {
+  margin-top: 20px; }
 
-.footer .map-img {
-  font-weight: 600;
-  font-size: 17px;
-  padding-left: 20px; }
-
-.footer address {
-  font-weight: 300; }
-
-.footer address a {
+/* =================== Footer Style Starts Here =================== */
+.footer-cont {
+  background-color: #212121;
   color: #FFF;
-  font-size: 1rem;
-  font-family: "mouse-300", Arial, Helvetica, sans-serif; }
+  padding: 50px; }
+  @media screen and (max-width: 940px) {
+    .footer-cont {
+      padding: 30px 10px; } }
+  .footer-cont .footer-top {
+    padding-bottom: 40px; }
+    .footer-cont .footer-top .foot-logo h2 {
+      color: #FFF;
+      font-weight: 600;
+      margin-top: 25px; }
+    .footer-cont .footer-top .foot-addr ul {
+      float: right; }
+      .footer-cont .footer-top .foot-addr ul li {
+        float: left;
+        padding: 10px; }
+        .footer-cont .footer-top .foot-addr ul li i {
+          margin-right: 2px; }
+  .footer-cont .foot-botom .fotter-coo h5 {
+    color: #51be78;
+    font-size: 1rem;
+    margin-bottom: 20px; }
+  .footer-cont .foot-botom .fotter-coo ul li {
+    font-size: .9rem;
+    padding: 10px 3px; }
+    .footer-cont .foot-botom .fotter-coo ul li i {
+      margin-right: 5px; }
+  .footer-cont .foot-botom .fotter-coo .gallery-row {
+    margin-top: 5px; }
+    .footer-cont .foot-botom .fotter-coo .gallery-row .gall-col {
+      padding: 5px; }
 
+.footer-ablove {
+  padding: 30px;
+  background-color: #28a745;
+  color: #FFF;
+  font-size: 1.5rem; }
+
+.footer-ablove .btn {
+  float: right;
+  background-color: #FFF; }
+
+/* =================== Copyroght Starts Here =================== */
 .copy {
   padding: 20px;
-  background: #1a202f;
+  background-color: #191616;
   color: #FFF; }
 
 .copy a {
@@ -685,111 +661,26 @@ header {
 .copy span i {
   margin-right: 20px; }
 
-.kf-2 {
-  background-color: #FCFCFC;
-  padding: 50px; }
+.cop-ck {
+  padding: 20px;
+  background-color: #ffffffbd; }
+  .cop-ck h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px; }
 
-@media screen and (max-width: 940px) {
-  .kf-2 {
-    padding: 30px 10px; } }
-.kf-2 .single-key {
-  box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35); }
+/* ===================================== Basic CSS ==================================== */
+@media screen and (max-width: 991px) {
+  .we-are-making .text-part {
+    text-align: center; }
 
-/* ===================================== Our Team Starts Here ===================================== */
-.our-team {
-  padding: 50px;
-  background-color: #cccccc1c; }
-  @media screen and (max-width: 940px) {
-    .our-team {
-      padding: 30px 10px; } }
-  .our-team .team-row {
-    margin-top: 20px; }
-    .our-team .team-row .single-usr {
-      box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
-      margin-bottom: 20px; }
-      .our-team .team-row .single-usr img {
-        width: 100%; }
-      .our-team .team-row .single-usr .det-o {
-        padding: 20px;
-        background-color: #3cc88f; }
-        .our-team .team-row .single-usr .det-o h4 {
-          color: #FFF;
-          margin-bottom: 0px;
-          font-size: 1.1rem;
-          font-weight: 600; }
-        .our-team .team-row .single-usr .det-o i {
-          color: #FFF;
-          font-size: .8rem; }
+  .we-are-making .text-part .count .count-sing {
+    margin-bottom: 20px; }
 
-.nav-box {
-  margin-top: 50px;
-  border-radius: 50px;
-  border: 1px solid #ccc; }
-  .nav-box ul li {
-    float: left;
-    padding: 15px; }
-    .nav-box ul li a {
-      color: #FFFF; }
-  .nav-box .btn {
-    margin-top: 7px;
-    float: right;
-    border-radius: 50px; }
+  .headwe-nav .container {
+    padding: 10px; }
 
-/* ===================================== Gallery Style  ================================== */
-.gallery-filter {
-  width: 100%;
-  text-align: center; }
-
-.gallery-filter .btn {
-  background-color: #FFF; }
-
-.gallery {
-  padding: 50px;
-  padding: 30px;
-  background-color: #FFF; }
-  @media screen and (max-width: 940px) {
-    .gallery {
-      padding: 30px 10px; } }
-
-.gallery-title {
-  font-size: 36px;
-  color: #00ab9f;
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 70px; }
-
-.gallery-title:after {
-  content: "";
-  position: absolute;
-  width: 7.5%;
-  left: 46.5%;
-  height: 45px;
-  border-bottom: 1px solid #3cc88f; }
-
-.filter-button {
-  font-size: 18px;
-  border: 1px solid #3cc88f;
-  border-radius: 5px;
-  text-align: center;
-  color: #3cc88f;
-  margin-bottom: 30px; }
-
-.filter-button:hover {
-  font-size: 18px;
-  border: 1px solid #3cc88f;
-  border-radius: 5px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #3cc88f; }
-
-.btn-default:active .filter-button:active {
-  background-color: #3cc88f;
-  color: white; }
-
-.port-image {
-  width: 100%; }
-
-.gallery_product {
-  margin-bottom: 30px; }
+  header .headwe-nav .nav-div .navbar-nav .nav-item .nav-link {
+    padding: 10px;
+    border-right: 0px; } }
 
 /*# sourceMappingURL=style.css.map */
